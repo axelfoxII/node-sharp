@@ -2,6 +2,18 @@
 
 Servidor Express para procesar imágenes con Sharp.
 
+## ¿Qué es Sharp?
+
+**Sharp** es una librería Node.js para procesamiento de imágenes de alto rendimiento. Usa libvips (una de las bibliotecas de procesamiento de imágenes más rápidas del mundo) para:
+
+- Redimensionar imágenes
+- Convertir formatos (JPEG, PNG, WebP, AVIF, etc.)
+- Aplicar filtros y efectos
+- Añadir watermarks
+- Optimizar calidad/tamaño
+
+Es hasta 4x más rápida que ImageMagick y usa menos memoria.
+
 ## Características
 
 - Upload de imágenes
@@ -19,8 +31,10 @@ npm install
 ## Ejecución
 
 ```bash
-node server.js
+npm run dev
 ```
+
+El servidor arrancará en http://localhost:3000
 
 ## Uso
 
