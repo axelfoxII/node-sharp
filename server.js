@@ -15,12 +15,9 @@ app.use(cors());
 app.use('/optimized', express.static('optimized'));
 app.use('/uploads', express.static('uploads'));
 
-// Configurar Multer para guardar archivos en memoria (no en disco)
-const storage = multer.memoryStorage();
-
-// Configurar Multer con el almacenamiento en memoria
+// Configurar Multer para guardar archivos en memoria
 const upload = multer({
-  storage: storage
+  storage: multer.memoryStorage()
 });
 
 /**
@@ -41,7 +38,7 @@ function createWatermark(text, width, height) {
   `);
 }
 
-// Ruta para subir imágenes
+// Ruta para subir UNA imagen
 app.post('/upload', upload.single('image'), async (req, res) => {
 
   try {

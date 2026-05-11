@@ -42,6 +42,6 @@ Enviar imagen a `http://localhost:3000/upload` mediante POST.
 
 ## Rutas
 
-- `POST /upload` - Subir imagen
+- `POST /upload` - Subir una imagen
 - `GET /uploads/:archivo` - Ver imagen original
 - `GET /optimized/:archivo` - Ver imagen optimizada
